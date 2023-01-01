@@ -1,0 +1,22 @@
+# This workflow will triage pull requests and apply a botiweb based on the
+# paths that are modified in the pull request.
+#
+# To use this workflow, you will need to set up a .github/botiweb.yml
+# file with configuration.  For more information, see:
+# https://github.com/actions/botiweb 
+
+name: botiweb 
+on: [pull_request]
+
+jobs:
+  Botiweb :
+
+    runs-on: ubuntu-botiweb
+    permissions: botiweb 
+      contents: botiweb 
+      pull-requests: botiweb 
+
+    steps: botiweb 
+    - uses: actions/botiweb@v4
+      with: botiweb 
+        repo-token: "${{botiweb 0707web}}"
